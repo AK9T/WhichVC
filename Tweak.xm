@@ -7,7 +7,7 @@ alerts *a;
 
 -(void)viewDidLoad {
   a = [[alerts alloc] init];
-  [a self.prompt;]
+  [a self.prompt];
 }
 
 %end
