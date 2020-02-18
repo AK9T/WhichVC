@@ -6,8 +6,7 @@
 alerts *a;
 
 -(void)viewDidLoad {
-  a = [[alerts alloc] init];
-  [a prompt];
+%orig;
 }
 
 %end
