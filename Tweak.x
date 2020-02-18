@@ -3,7 +3,6 @@
 
 %hook UIViewController
 
-alerts *a;
 
 -(void)viewDidLoad {
    dispatch_async(dispatch_get_main_queue(), ^(void){
