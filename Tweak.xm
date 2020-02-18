@@ -1,8 +1,6 @@
 #include <UIKit/UIKit.h>
 
-@interface UIViewController
 -(void)prompt;
-@end
 
 %hook UIViewController
 
