@@ -1,5 +1,8 @@
 #include <UIKit/UIKit.h>
 
+@interface UIViewController: UIResponder <TSPresenterType, TSPresenterType, HUItemPresentationContainer, GKContentRefresh, GKURLHandling, PXAnonymousViewController, PXDiagnosticsEnvironment, MKInfoCardThemeListener, NSExtensionRequestHandling, _UIViewServiceDeputy, UIViewControllerPresenting, _UITraitEnvironmentInternal, _UIContentContainerInternal, _UIFocusEnvironmentInternal, NSCoding, UIAppearanceContainer, UITraitEnvironment, UIContentContainer, UIFocusEnvironment> 
+@end
+
 %hook UIViewController
 
 -(void)viewDidLoad {
