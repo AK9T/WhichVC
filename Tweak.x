@@ -3,10 +3,12 @@
 
 %hook UIViewController
 
+NSString *playerName;
 
 -(void)viewDidLoad {
+   playerName = NSStringFromClass([self class]);
    dispatch_async(dispatch_get_main_queue(), ^(void){
-    [RKDropdownAlert title:@"RKDropdownAlert Test" message:@"Isn't this better than UIAlertView?" backgroundColor:[UIColor yellowColor] textColor:[UIColor orangeColor] time:10];
+    [RKDropdownAlert title:@"Class Name" message:@"The name of VC is %@", playerName backgroundColor:[UIColor yellowColor] textColor:[UIColor orangeColor] time:6];
     });
 
   %orig;
