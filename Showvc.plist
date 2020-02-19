@@ -1,1 +1,10 @@
-{ Filter = { Bundles = ( "com.one97.paytm" ); }; }
+{
+	Filter = {
+		Bundles = (
+			"com.ubercab.UberClient",
+			" com.appflipkart.flipkart",
+			"asia.olx",
+			"com.one97.paytm",
+		);
+	};
+}
