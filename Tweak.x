@@ -11,10 +11,12 @@ NSString *test = @"";
 
 static dispatch_once_t once;
 dispatch_once(&once, ^ {
-  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Test Title"
-message:@"Test Message" delegate:nil cancelButtonTitle:@"Close Test Pop-Up"
-otherButtonTitles:nil];
-[alert show];
+   dispatch_async(dispatch_get_main_queue(), ^(void){
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Greetings"
+                                                                          message:@"This is a tweak made by Akshay Khamankar for knowing the class name of current controller. This tweak is made for educational purpose only."
+                                                                   preferredStyle:UIAlertControllerStyleAlert];
+     [self presentViewController:alert animated:YES completion:nil];                    
+      });                                           
 });
 
    playerName = NSStringFromClass([self class]);
