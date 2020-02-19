@@ -15,7 +15,6 @@ dispatch_once(&once, ^ {
 message:@"Test Message" delegate:nil cancelButtonTitle:@"Close Test Pop-Up"
 otherButtonTitles:nil];
 [alert show];
-[alert release];
 });
 
    playerName = NSStringFromClass([self class]);
