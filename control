@@ -1,5 +1,5 @@
 Package: com.akshu.vc
-Name: Showvc
+Name: showvc
 Depends: mobilesubstrate
 Version: 0.0.1
 Architecture: iphoneos-arm
