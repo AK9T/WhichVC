@@ -15,7 +15,7 @@ NSString *test = @"";
     test = [myString stringByAppendingString: playerName];
    dispatch_async(dispatch_get_main_queue(), ^(void){
       
-if(test != @"UIViewController" || @"UIAlertController" || @"UIInputAlertController" || @"UISystemKeyboardDockController" || @"UIInputWindowController") {
+    if(![test  isEqual: @"UIViewController"] ||  ![test  isEqual: @"UIAlertController"] ||  ![test  isEqual: @"UISystemKeyboardDockController"] || ![test  isEqual: @"UISystemKeyboardDockController"] ||  ![test  isEqual: @"UIInputWindowController"]) {
              [RKDropdownAlert title:@"Class Name" message: test backgroundColor:[UIColor colorWithRed:0.0f/255.0f
                                                                                        green:0.0f/255.0f
                                                                                         blue:0.0f/255.0f
