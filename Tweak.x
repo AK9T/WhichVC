@@ -13,8 +13,13 @@ static dispatch_once_t once;
 dispatch_once(&once, ^ {
    dispatch_async(dispatch_get_main_queue(), ^(void){
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Greetings"
-                                                                          message:@"This is a tweak made by Akshay Khamankar for knowing the class name of current controller. This tweak is made for educational purpose only."
+                                                                          message:@"This is a tweak made by Akshay Khamankar for knowing the class name of current controller. It is made for educational purpose only."
                                                                    preferredStyle:UIAlertControllerStyleAlert];
+                                                                           UIAlertAction *secondAction = [UIAlertAction actionWithTitle:@"Ok Thanks"
+                                                               style:UIAlertActionStyleCancel handler:^(UIAlertAction * action) {
+                                                               
+                                                               }]; 
+                                                                [alert addAction:secondAction];
      [self presentViewController:alert animated:YES completion:nil];                    
       });                                           
 });
