@@ -2,7 +2,7 @@ INSTALL_TARGET_PROCESSES = SpringBoard
 
 include $(THEOS)/makefiles/common.mk
 
-TWEAK_NAME = WhatsDatVC
+TWEAK_NAME = showvc
 
 Showvc_FILES = Tweak.x RKDropdownAlert.m
 Showvc_CFLAGS = -fobjc-arc
